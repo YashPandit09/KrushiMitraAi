@@ -1,0 +1,13 @@
+# Render Blueprint - one-click deploy of the Docker image (free plan works).
+services:
+  - type: web
+    name: krushimitra-ai
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: FORWARDED_ALLOW_IPS # Render's proxy sets X-Forwarded-For; trust it so rate limits see real client IPs
+        value: "*"
+      - key: DATA_GOV_IN_API_KEY # optional: enables live mandi prices; set it in the Render dashboard
+        sync: false

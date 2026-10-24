@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Python - lint & tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            backend/requirements*.txt
+            pipeline/requirements*.txt
+      - run: pip install -r backend/requirements-dev.txt -r pipeline/requirements.txt
+      - run: ruff check .
+      - run: ruff format --check pipeline backend
+      - run: pytest -q
+
+  frontend:
+    name: Frontend - lint, types, tests, build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  docker:
+    name: Docker - build & smoke test
+    runs-on: ubuntu-latest
+    needs: [python, frontend]
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t krushimitra-ai:ci .
+      - name: Smoke test the container
+        run: |
+          docker run -d --name app -p 8000:8000 krushimitra-ai:ci
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:8000/api/health && break; sleep 2; done
+          curl -fsS http://127.0.0.1:8000/ | grep -q "KrushiMitra AI"
+          curl -fsS http://127.0.0.1:8000/district/cuttack | grep -q "KrushiMitra AI"
+          curl -fsS http://127.0.0.1:8000/api/districts | python3 -c "import sys, json; assert len(json.load(sys.stdin)) == 30"
+          curl -fsS -D - -o /dev/null http://127.0.0.1:8000/ | grep -qi "content-security-policy"
+          test "$(docker inspect --format '{{.Config.User}}' krushimitra-ai:ci)" = "app"
+      - if: always()
+        run: docker logs app || true
+
+  security:
+    name: Security - secrets & dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pip-audit
+      - run: pip-audit -r backend/requirements.txt -r pipeline/requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm audit --omit=dev --audit-level=high
+        working-directory: frontend

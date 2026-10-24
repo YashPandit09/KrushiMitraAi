@@ -1,0 +1,21 @@
+# Keep the build context small and free of secrets
+.git
+.github
+.venv
+venv
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.ruff_cache
+**/node_modules
+frontend/dist
+data/raw
+models
+docs
+Yield-Ai
+.env
+.env.*
+!.env.example
+*.log
+.vscode
+.idea
