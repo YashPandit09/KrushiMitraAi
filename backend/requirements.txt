@@ -1,0 +1,7 @@
+# Runtime dependencies of the API server (pinned; updated by Dependabot).
+fastapi==0.162.0
+starlette==1.9.0
+pydantic==2.14.1
+pydantic-settings==2.16.1
+httpx==0.28.1
+uvicorn[standard]==0.54.0
