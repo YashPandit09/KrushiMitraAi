@@ -1,0 +1,38 @@
+# Secrets - never commit real credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+*.local
+
+# Data: raw downloads are re-fetched by the pipeline; processed files ARE committed
+data/raw/
+models/
+*.pkl
+*.joblib
+
+# Logs and OS / editor clutter
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Local legacy copy of the SIH prototype (kept outside version control)
+/Yield-Ai/

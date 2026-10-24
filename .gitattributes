@@ -1,0 +1,8 @@
+# Normalise line endings (developed on Windows, deployed on Linux)
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
+# Generated data: keep diffs readable but don't count it as source code on GitHub
+data/processed/** linguist-generated=true
+frontend/package-lock.json linguist-generated=true

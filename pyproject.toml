@@ -1,0 +1,26 @@
+[project]
+name = "krushimitra-ai"
+version = "1.0.0"
+description = "District-level Kharif rice yield forecasts for Odisha with calibrated uncertainty"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["frontend", "data", "Yield-Ai"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = ["S101"]  # assert is fine in tests
+
+[tool.ruff.lint.per-file-ignores]
+"pipeline/*" = ["S311"]  # pseudo-random numbers are not used for security
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests", "pipeline/tests"]
+filterwarnings = [
+  # Starlette 1.x nudges its test client towards httpx2 (a UserWarning subclass); harmless here.
+  "ignore:Using `httpx` with `starlette.testclient` is deprecated:UserWarning",
+]
