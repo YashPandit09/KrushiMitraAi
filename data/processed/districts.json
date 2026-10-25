@@ -1,0 +1,302 @@
+[
+  {
+    "slug": "angul",
+    "name": "Angul",
+    "aliases": [
+      "Anugola",
+      "Anugul"
+    ],
+    "lon": 84.9133,
+    "lat": 20.9848,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "balangir",
+    "name": "Balangir",
+    "aliases": [],
+    "lon": 83.1742,
+    "lat": 20.591,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "balasore",
+    "name": "Balasore",
+    "aliases": [
+      "Baleshwar"
+    ],
+    "lon": 86.9132,
+    "lat": 21.4967,
+    "coastal": true,
+    "kbk": false
+  },
+  {
+    "slug": "bargarh",
+    "name": "Bargarh",
+    "aliases": [
+      "Baragada"
+    ],
+    "lon": 83.3533,
+    "lat": 21.2206,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "bhadrak",
+    "name": "Bhadrak",
+    "aliases": [],
+    "lon": 86.6196,
+    "lat": 20.9868,
+    "coastal": true,
+    "kbk": false
+  },
+  {
+    "slug": "boudh",
+    "name": "Boudh",
+    "aliases": [
+      "Baudh"
+    ],
+    "lon": 84.1774,
+    "lat": 20.6473,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "cuttack",
+    "name": "Cuttack",
+    "aliases": [
+      "Kataka"
+    ],
+    "lon": 85.7041,
+    "lat": 20.4515,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "deogarh",
+    "name": "Deogarh",
+    "aliases": [
+      "Debagada",
+      "Debagarh"
+    ],
+    "lon": 84.7808,
+    "lat": 21.4629,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "dhenkanal",
+    "name": "Dhenkanal",
+    "aliases": [],
+    "lon": 85.5308,
+    "lat": 20.8269,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "gajapati",
+    "name": "Gajapati",
+    "aliases": [],
+    "lon": 84.1612,
+    "lat": 19.1747,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "ganjam",
+    "name": "Ganjam",
+    "aliases": [],
+    "lon": 84.6737,
+    "lat": 19.6277,
+    "coastal": true,
+    "kbk": false
+  },
+  {
+    "slug": "jagatsinghpur",
+    "name": "Jagatsinghpur",
+    "aliases": [
+      "Jagatsinghapur"
+    ],
+    "lon": 86.34,
+    "lat": 20.2191,
+    "coastal": true,
+    "kbk": false
+  },
+  {
+    "slug": "jajpur",
+    "name": "Jajpur",
+    "aliases": [
+      "Jajapur"
+    ],
+    "lon": 86.1486,
+    "lat": 20.8522,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "jharsuguda",
+    "name": "Jharsuguda",
+    "aliases": [],
+    "lon": 83.9547,
+    "lat": 21.8064,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "kalahandi",
+    "name": "Kalahandi",
+    "aliases": [],
+    "lon": 83.109,
+    "lat": 19.8683,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "kandhamal",
+    "name": "Kandhamal",
+    "aliases": [
+      "Kandhamala"
+    ],
+    "lon": 84.0478,
+    "lat": 20.1275,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "kendrapara",
+    "name": "Kendrapara",
+    "aliases": [
+      "Kendrapada"
+    ],
+    "lon": 86.6056,
+    "lat": 20.5534,
+    "coastal": true,
+    "kbk": false
+  },
+  {
+    "slug": "keonjhar",
+    "name": "Keonjhar",
+    "aliases": [
+      "Kendujhar"
+    ],
+    "lon": 85.7048,
+    "lat": 21.5376,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "khordha",
+    "name": "Khordha",
+    "aliases": [],
+    "lon": 85.5195,
+    "lat": 20.0974,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "koraput",
+    "name": "Koraput",
+    "aliases": [],
+    "lon": 82.721,
+    "lat": 18.8148,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "malkangiri",
+    "name": "Malkangiri",
+    "aliases": [],
+    "lon": 81.9564,
+    "lat": 18.2588,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "mayurbhanj",
+    "name": "Mayurbhanj",
+    "aliases": [],
+    "lon": 86.412,
+    "lat": 21.8949,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "nabarangpur",
+    "name": "Nabarangpur",
+    "aliases": [
+      "Nabarangapur"
+    ],
+    "lon": 82.3355,
+    "lat": 19.5812,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "nayagarh",
+    "name": "Nayagarh",
+    "aliases": [
+      "Nayagada"
+    ],
+    "lon": 85.0031,
+    "lat": 20.2161,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "nuapada",
+    "name": "Nuapada",
+    "aliases": [],
+    "lon": 82.5782,
+    "lat": 20.4666,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "puri",
+    "name": "Puri",
+    "aliases": [],
+    "lon": 85.7212,
+    "lat": 19.8786,
+    "coastal": true,
+    "kbk": false
+  },
+  {
+    "slug": "rayagada",
+    "name": "Rayagada",
+    "aliases": [],
+    "lon": 83.5136,
+    "lat": 19.3628,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "sambalpur",
+    "name": "Sambalpur",
+    "aliases": [],
+    "lon": 84.2758,
+    "lat": 21.4536,
+    "coastal": false,
+    "kbk": false
+  },
+  {
+    "slug": "subarnapur",
+    "name": "Subarnapur",
+    "aliases": [],
+    "lon": 83.8253,
+    "lat": 20.9325,
+    "coastal": false,
+    "kbk": true
+  },
+  {
+    "slug": "sundargarh",
+    "name": "Sundargarh",
+    "aliases": [
+      "Sundaragada"
+    ],
+    "lon": 84.5103,
+    "lat": 22.0802,
+    "coastal": false,
+    "kbk": false
+  }
+]
