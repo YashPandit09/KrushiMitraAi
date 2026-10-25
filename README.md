@@ -97,8 +97,9 @@ python -m pipeline all          # download public data, rebuild features, backte
 python -m pipeline all --refresh-weather   # later in the season: fetch the newest weather and update forecasts
 ```
 
-Everything in `data/processed/` and `docs/MODEL_CARD.md` is regenerated. A scheduled GitHub Action does this every
-month from July to December and redeploys the image.
+Everything in `data/processed/` and `docs/MODEL_CARD.md` is regenerated. A scheduled GitHub Action does this on the
+5th of every month from July to December. It opens a pull request with the new forecasts and a summary table; once a
+maintainer merges it, a new image is published.
 
 ## How it works
 

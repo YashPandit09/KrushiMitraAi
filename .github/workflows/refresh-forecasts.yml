@@ -1,14 +1,24 @@
 name: Refresh forecasts
 
-# During the Kharif season, re-download weather and cyclone tracks a few days after each month
-# ends, re-run the backtests and forecasts, commit the regenerated data and republish the image.
+# During the Kharif season, a few days after each month ends: re-download weather and cyclone
+# tracks, re-run the backtests and forecasts, and open a pull request with the regenerated data.
+#
+# - main is protected, so the bot proposes changes instead of pushing them.
+# - Pull requests opened with GITHUB_TOKEN do not trigger workflows by themselves, so CI is
+#   dispatched explicitly on the PR branch (workflow_dispatch is allowed) to produce the
+#   required status checks.
+# - A maintainer reviews the new numbers and merges; the merge to main publishes a new image.
+#
+# Requires: Settings -> Actions -> General -> "Allow GitHub Actions to create and approve pull requests".
 on:
   schedule:
     - cron: "0 3 5 7-12 *" # 03:00 UTC on the 5th, July-December
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write # push the refresh branch
+  pull-requests: write # open the pull request, close superseded ones
+  actions: write # dispatch CI on the refresh branch
 
 concurrency:
   group: refresh-forecasts
@@ -18,8 +28,6 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    outputs:
-      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,25 +37,48 @@ jobs:
           cache-dependency-path: pipeline/requirements.txt
       - run: pip install -r pipeline/requirements.txt
       - run: python -m pipeline all --refresh-weather
-      - id: commit
-        name: Commit regenerated data
+
+      - name: Summarise the new forecasts for the pull request
         run: |
-          if git diff --quiet -- data/processed; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No changes."
+          python - > pr-body.md <<'EOF'
+          import json
+          f = json.load(open("data/processed/forecasts.json"))
+          print("Automated monthly refresh: new weather and cyclone data, re-run backtests and forecasts.\n")
+          print(f"- Weather data through **{f['weather_through']}**; latest official yields: Kharif {f['last_season_with_official_yield']}")
+          print("- Model per issue date: " + ", ".join(f"{k}: `{v.split('|')[0]}`" for k, v in f["model_by_lead"].items()))
+          print("\n| Season | Issued after | Odisha forecast (t/ha) | 80% range | Trend |")
+          print("|---|---|---|---|---|")
+          for s in sorted(f["state"], key=lambda s: (s["year"], ["Jul", "Aug", "Sep", "Oct", "Nov"].index(s["lead"]))):
+              print(f"| Kharif {s['year']} | end of {s['lead']} | {s['forecast_t_ha']:.2f} | {s['lo80']:.2f}-{s['hi80']:.2f} | {s['trend_t_ha']:.2f} |")
+          print("\nPlease sanity-check the numbers (and docs/MODEL_CARD.md) before merging. Merging publishes a new container image.")
+          EOF
+          cat pr-body.md
+
+      - name: Open a pull request and run CI on it
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- data/processed docs/MODEL_CARD.md; then
+            echo "No changes to propose."
             exit 0
           fi
+          stamp="$(date -u +%Y-%m-%d)"
+          branch="data-refresh/$(date -u +%Y%m%d-%H%M%S)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/processed
-          git commit -m "data: refresh forecasts ($(date -u +%Y-%m-%d))"
-          git push
-          echo "changed=true" >> "$GITHUB_OUTPUT"
+          git switch -c "$branch"
+          git add data/processed docs/MODEL_CARD.md
+          git commit -m "data: refresh forecasts (${stamp})"
+          git push origin "$branch"
 
-  publish:
-    needs: refresh
-    if: needs.refresh.outputs.changed == 'true'
-    permissions:
-      contents: read
-      packages: write
-    uses: ./.github/workflows/docker-publish.yml
+          url="$(gh pr create --base main --head "$branch" --title "data: refresh forecasts (${stamp})" --body-file pr-body.md)"
+          echo "Opened ${url}"
+
+          # Close older refresh PRs that were never merged - the new one supersedes them.
+          gh pr list --state open --limit 100 --json number,headRefName \
+            --jq ".[] | select(.headRefName | startswith(\"data-refresh/\")) | select(.headRefName != \"${branch}\") | .number" |
+            while read -r old; do
+              gh pr close "$old" --delete-branch --comment "Superseded by ${url}"
+            done
+
+          gh workflow run ci.yml --ref "$branch"

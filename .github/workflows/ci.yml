@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch: # used by the forecast-refresh bot to run CI on its pull requests
 
 permissions:
   contents: read
