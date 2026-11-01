@@ -13,7 +13,7 @@ RUN npm run build
 # ---------------------------------------------------------------------------
 # 2. Runtime: FastAPI serves the API and the built frontend from one origin
 # ---------------------------------------------------------------------------
-FROM python:3.12-slim AS runtime
+FROM python:3.15-slim AS runtime
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
