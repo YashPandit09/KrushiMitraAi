@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-24T08:43:29Z",
- "weather_through": "2026-10-21",
+ "generated_at": "2026-11-05T10:08:58Z",
+ "weather_through": "2026-11-02",
  "last_season_with_official_yield": 2024,
  "model": "online-selection",
  "model_by_lead": {
@@ -80,6 +80,16 @@
    "hi80": 3.332,
    "lo90": 1.671,
    "hi90": 3.449
+  },
+  {
+   "year": 2026,
+   "lead": "Oct",
+   "forecast_t_ha": 2.366,
+   "trend_t_ha": 2.56,
+   "lo80": 1.668,
+   "hi80": 3.064,
+   "lo90": 1.639,
+   "hi90": 3.094
   },
   {
    "year": 2026,
@@ -7452,6 +7462,2057 @@
      "unit": "days",
      "value": 1.0,
      "effect_t_ha": 0.009
+    }
+   ]
+  },
+  {
+   "district_slug": "angul",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.996,
+   "trend_t_ha": 3.046,
+   "anomaly_pct": -1.7,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.828,
+   "lo90": 1.244,
+   "hi80": 4.163,
+   "hi90": 4.748,
+   "season_rain_anomaly_pct": 22.6,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 4.0,
+     "effect_t_ha": -0.101
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.226,
+     "effect_t_ha": 0.065
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.035,
+     "effect_t_ha": 0.059
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.42,
+     "effect_t_ha": -0.059
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.038
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.067,
+     "effect_t_ha": -0.026
+    }
+   ]
+  },
+  {
+   "district_slug": "balangir",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.094,
+   "trend_t_ha": 2.21,
+   "anomaly_pct": -5.3,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.278,
+   "lo90": 0.869,
+   "hi80": 2.91,
+   "hi90": 3.318,
+   "season_rain_anomaly_pct": 12.1,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 282,
+     "max_wind_kt": 31,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 125,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.532,
+     "effect_t_ha": -0.041
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.121,
+     "effect_t_ha": 0.04
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.319,
+     "effect_t_ha": -0.036
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.025
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 12.863,
+     "effect_t_ha": 0.023
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 18.0,
+     "effect_t_ha": -0.02
+    }
+   ]
+  },
+  {
+   "district_slug": "balasore",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.536,
+   "trend_t_ha": 2.65,
+   "anomaly_pct": -4.3,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.547,
+   "lo90": 1.053,
+   "hi80": 3.524,
+   "hi90": 4.019,
+   "season_rain_anomaly_pct": 35.1,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.539,
+     "effect_t_ha": -0.182
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.351,
+     "effect_t_ha": 0.061
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.02
+    },
+    {
+     "feature": "coastal",
+     "label": "Coastal district",
+     "unit": "flag",
+     "value": 1.0,
+     "effect_t_ha": 0.017
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 152.08,
+     "effect_t_ha": -0.017
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": -0.022,
+     "effect_t_ha": -0.009
+    }
+   ]
+  },
+  {
+   "district_slug": "bargarh",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.034,
+   "trend_t_ha": 2.275,
+   "anomaly_pct": -10.6,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.241,
+   "lo90": 0.845,
+   "hi80": 2.827,
+   "hi90": 3.224,
+   "season_rain_anomaly_pct": 18.4,
+   "cyclones": [
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 180,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 31.0,
+     "effect_t_ha": -0.164
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 3.0,
+     "effect_t_ha": -0.051
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.291,
+     "effect_t_ha": -0.04
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.184,
+     "effect_t_ha": 0.03
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.418,
+     "effect_t_ha": -0.029
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 8.774,
+     "effect_t_ha": 0.027
+    }
+   ]
+  },
+  {
+   "district_slug": "bhadrak",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.116,
+   "trend_t_ha": 2.227,
+   "anomaly_pct": -5.0,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.291,
+   "lo90": 0.879,
+   "hi80": 2.94,
+   "hi90": 3.353,
+   "season_rain_anomaly_pct": 34.9,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.572,
+     "effect_t_ha": -0.157
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.349,
+     "effect_t_ha": 0.053
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.025
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": -0.102,
+     "effect_t_ha": 0.021
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.019
+    },
+    {
+     "feature": "coastal",
+     "label": "Coastal district",
+     "unit": "flag",
+     "value": 1.0,
+     "effect_t_ha": 0.016
+    }
+   ]
+  },
+  {
+   "district_slug": "boudh",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.816,
+   "trend_t_ha": 3.199,
+   "anomaly_pct": -12.0,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.718,
+   "lo90": 1.169,
+   "hi80": 3.913,
+   "hi90": 4.462,
+   "season_rain_anomaly_pct": 15.2,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 288,
+     "max_wind_kt": 31,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 225,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.627,
+     "effect_t_ha": -0.247
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 4.0,
+     "effect_t_ha": -0.099
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.152,
+     "effect_t_ha": 0.057
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 186.04,
+     "effect_t_ha": -0.035
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.177,
+     "effect_t_ha": -0.032
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 5.505,
+     "effect_t_ha": 0.028
+    }
+   ]
+  },
+  {
+   "district_slug": "cuttack",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.853,
+   "trend_t_ha": 3.024,
+   "anomaly_pct": -5.7,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.741,
+   "lo90": 1.185,
+   "hi80": 3.964,
+   "hi90": 4.521,
+   "season_rain_anomaly_pct": 17.0,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.606,
+     "effect_t_ha": -0.207
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.17,
+     "effect_t_ha": 0.059
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.033
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.02,
+     "effect_t_ha": 0.025
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.056,
+     "effect_t_ha": -0.022
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.02
+    }
+   ]
+  },
+  {
+   "district_slug": "deogarh",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.418,
+   "trend_t_ha": 2.354,
+   "anomaly_pct": 2.7,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.475,
+   "lo90": 1.004,
+   "hi80": 3.36,
+   "hi90": 3.831,
+   "season_rain_anomaly_pct": 29.6,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.296,
+     "effect_t_ha": 0.051
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.034,
+     "effect_t_ha": 0.044
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.032
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.323,
+     "effect_t_ha": -0.027
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.052,
+     "effect_t_ha": -0.02
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 1.0,
+     "effect_t_ha": 0.009
+    }
+   ]
+  },
+  {
+   "district_slug": "dhenkanal",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 3.321,
+   "trend_t_ha": 3.387,
+   "anomaly_pct": -2.0,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 2.026,
+   "lo90": 1.379,
+   "hi80": 4.615,
+   "hi90": 5.262,
+   "season_rain_anomaly_pct": 24.5,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.499,
+     "effect_t_ha": -0.168
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.245,
+     "effect_t_ha": 0.067
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.025,
+     "effect_t_ha": 0.039
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.114,
+     "effect_t_ha": -0.028
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.027
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 11.0,
+     "effect_t_ha": 0.013
+    }
+   ]
+  },
+  {
+   "district_slug": "gajapati",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 1.611,
+   "trend_t_ha": 2.045,
+   "anomaly_pct": -21.2,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 0.983,
+   "lo90": 0.669,
+   "hi80": 2.239,
+   "hi90": 2.553,
+   "season_rain_anomaly_pct": 27.2,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 129,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 239,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.866,
+     "effect_t_ha": -0.211
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 1.054,
+     "effect_t_ha": -0.094
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.067,
+     "effect_t_ha": -0.062
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 4.0,
+     "effect_t_ha": -0.06
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 340.22,
+     "effect_t_ha": -0.026
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.272,
+     "effect_t_ha": 0.023
+    }
+   ]
+  },
+  {
+   "district_slug": "ganjam",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.065,
+   "trend_t_ha": 2.512,
+   "anomaly_pct": -17.8,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.26,
+   "lo90": 0.857,
+   "hi80": 2.87,
+   "hi90": 3.272,
+   "season_rain_anomaly_pct": 18.4,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 198,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 274,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.786,
+     "effect_t_ha": -0.25
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.839,
+     "effect_t_ha": -0.1
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.049,
+     "effect_t_ha": -0.064
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 3.0,
+     "effect_t_ha": -0.051
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.184,
+     "effect_t_ha": 0.032
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 278.77,
+     "effect_t_ha": -0.031
+    }
+   ]
+  },
+  {
+   "district_slug": "jagatsinghpur",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.354,
+   "trend_t_ha": 2.555,
+   "anomaly_pct": -7.9,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.437,
+   "lo90": 0.978,
+   "hi80": 3.272,
+   "hi90": 3.731,
+   "season_rain_anomaly_pct": 29.6,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.639,
+     "effect_t_ha": -0.196
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.296,
+     "effect_t_ha": 0.046
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.027
+    },
+    {
+     "feature": "coastal",
+     "label": "Coastal district",
+     "unit": "flag",
+     "value": 1.0,
+     "effect_t_ha": 0.025
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.024
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 152.59,
+     "effect_t_ha": -0.017
+    }
+   ]
+  },
+  {
+   "district_slug": "jajpur",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 1.991,
+   "trend_t_ha": 1.978,
+   "anomaly_pct": 0.7,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.215,
+   "lo90": 0.827,
+   "hi80": 2.767,
+   "hi90": 3.156,
+   "season_rain_anomaly_pct": 27.3,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.451,
+     "effect_t_ha": -0.06
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.273,
+     "effect_t_ha": 0.044
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 0.0,
+     "effect_t_ha": 0.024
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.012
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.011,
+     "effect_t_ha": 0.009
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 11.0,
+     "effect_t_ha": 0.006
+    }
+   ]
+  },
+  {
+   "district_slug": "jharsuguda",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 1.988,
+   "trend_t_ha": 1.942,
+   "anomaly_pct": 2.4,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.213,
+   "lo90": 0.826,
+   "hi80": 2.763,
+   "hi90": 3.151,
+   "season_rain_anomaly_pct": 19.5,
+   "cyclones": [
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 270,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.195,
+     "effect_t_ha": 0.036
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.074,
+     "effect_t_ha": 0.033
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 19.0,
+     "effect_t_ha": -0.024
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 2.174,
+     "effect_t_ha": 0.023
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.021
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.025,
+     "effect_t_ha": 0.015
+    }
+   ]
+  },
+  {
+   "district_slug": "kalahandi",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.529,
+   "trend_t_ha": 2.787,
+   "anomaly_pct": -9.3,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.544,
+   "lo90": 1.05,
+   "hi80": 3.515,
+   "hi90": 4.008,
+   "season_rain_anomaly_pct": 7.2,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 206,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 109,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 4.0,
+     "effect_t_ha": -0.092
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.055,
+     "effect_t_ha": -0.078
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.398,
+     "effect_t_ha": -0.062
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.072,
+     "effect_t_ha": 0.032
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 14.04,
+     "effect_t_ha": 0.03
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 18.0,
+     "effect_t_ha": -0.026
+    }
+   ]
+  },
+  {
+   "district_slug": "kandhamal",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 1.641,
+   "trend_t_ha": 1.896,
+   "anomaly_pct": -13.4,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.002,
+   "lo90": 0.682,
+   "hi80": 2.281,
+   "hi90": 2.601,
+   "season_rain_anomaly_pct": 5.6,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 228,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 203,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.629,
+     "effect_t_ha": -0.141
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.055,
+     "effect_t_ha": -0.048
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 3.0,
+     "effect_t_ha": -0.041
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.467,
+     "effect_t_ha": -0.021
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 7.352,
+     "effect_t_ha": 0.02
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.056,
+     "effect_t_ha": 0.019
+    }
+   ]
+  },
+  {
+   "district_slug": "kendrapara",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 1.89,
+   "trend_t_ha": 2.035,
+   "anomaly_pct": -7.1,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.153,
+   "lo90": 0.785,
+   "hi80": 2.627,
+   "hi90": 2.995,
+   "season_rain_anomaly_pct": 35.4,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.625,
+     "effect_t_ha": -0.147
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.354,
+     "effect_t_ha": 0.049
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 3.0,
+     "effect_t_ha": -0.044
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.028,
+     "effect_t_ha": -0.03
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": -0.166,
+     "effect_t_ha": 0.026
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 208.16,
+     "effect_t_ha": -0.019
+    }
+   ]
+  },
+  {
+   "district_slug": "keonjhar",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.911,
+   "trend_t_ha": 2.945,
+   "anomaly_pct": -1.2,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.776,
+   "lo90": 1.209,
+   "hi80": 4.045,
+   "hi90": 4.613,
+   "season_rain_anomaly_pct": 35.7,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.446,
+     "effect_t_ha": -0.093
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.357,
+     "effect_t_ha": 0.072
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.027,
+     "effect_t_ha": 0.046
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.036
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.036
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.189,
+     "effect_t_ha": -0.033
+    }
+   ]
+  },
+  {
+   "district_slug": "khordha",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.37,
+   "trend_t_ha": 2.615,
+   "anomaly_pct": -9.4,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.446,
+   "lo90": 0.984,
+   "hi80": 3.294,
+   "hi90": 3.756,
+   "season_rain_anomaly_pct": 21.8,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-23",
+     "closest_km": 273,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.655,
+     "effect_t_ha": -0.206
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.218,
+     "effect_t_ha": 0.037
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.201,
+     "effect_t_ha": -0.029
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.027
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 3.545,
+     "effect_t_ha": 0.026
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 152.65,
+     "effect_t_ha": -0.02
+    }
+   ]
+  },
+  {
+   "district_slug": "koraput",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.507,
+   "trend_t_ha": 2.98,
+   "anomaly_pct": -15.9,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.53,
+   "lo90": 1.041,
+   "hi80": 3.483,
+   "hi90": 3.972,
+   "season_rain_anomaly_pct": 25.5,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 130,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 157,
+     "max_wind_kt": 105,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.967,
+     "effect_t_ha": -0.144
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 5.0,
+     "effect_t_ha": -0.117
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.467,
+     "effect_t_ha": -0.111
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.033,
+     "effect_t_ha": -0.064
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 314.07,
+     "effect_t_ha": -0.034
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.255,
+     "effect_t_ha": 0.033
+    }
+   ]
+  },
+  {
+   "district_slug": "malkangiri",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.167,
+   "trend_t_ha": 2.426,
+   "anomaly_pct": -10.7,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.322,
+   "lo90": 0.9,
+   "hi80": 3.011,
+   "hi90": 3.434,
+   "season_rain_anomaly_pct": 16.9,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 185,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-28",
+     "closest_km": 141,
+     "max_wind_kt": 105,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.494,
+     "effect_t_ha": -0.095
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.054,
+     "effect_t_ha": -0.073
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.74,
+     "effect_t_ha": -0.048
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.169,
+     "effect_t_ha": 0.036
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 301.03,
+     "effect_t_ha": -0.031
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.029
+    }
+   ]
+  },
+  {
+   "district_slug": "mayurbhanj",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.325,
+   "trend_t_ha": 2.559,
+   "anomaly_pct": -9.1,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.419,
+   "lo90": 0.966,
+   "hi80": 3.232,
+   "hi90": 3.685,
+   "season_rain_anomaly_pct": 40.2,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.809,
+     "effect_t_ha": -0.274
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.402,
+     "effect_t_ha": 0.065
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.023,
+     "effect_t_ha": 0.028
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.186,
+     "effect_t_ha": -0.027
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.027
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.025
+    }
+   ]
+  },
+  {
+   "district_slug": "nabarangpur",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.566,
+   "trend_t_ha": 2.931,
+   "anomaly_pct": -12.5,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.566,
+   "lo90": 1.065,
+   "hi80": 3.565,
+   "hi90": 4.066,
+   "season_rain_anomaly_pct": 24.4,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 219,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 63,
+     "max_wind_kt": 34,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.992,
+     "effect_t_ha": -0.151
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 5.0,
+     "effect_t_ha": -0.118
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.284,
+     "effect_t_ha": -0.042
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.244,
+     "effect_t_ha": 0.039
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 268.34,
+     "effect_t_ha": -0.031
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 18.0,
+     "effect_t_ha": -0.026
+    }
+   ]
+  },
+  {
+   "district_slug": "nayagarh",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.216,
+   "trend_t_ha": 2.439,
+   "anomaly_pct": -9.2,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.352,
+   "lo90": 0.92,
+   "hi80": 3.08,
+   "hi90": 3.512,
+   "season_rain_anomaly_pct": 18.9,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-23",
+     "closest_km": 272,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.58,
+     "effect_t_ha": -0.177
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.189,
+     "effect_t_ha": 0.034
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.453,
+     "effect_t_ha": -0.032
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 209.2,
+     "effect_t_ha": -0.028
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.027
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 3.698,
+     "effect_t_ha": 0.018
+    }
+   ]
+  },
+  {
+   "district_slug": "nuapada",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.081,
+   "trend_t_ha": 2.288,
+   "anomaly_pct": -9.1,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.27,
+   "lo90": 0.864,
+   "hi80": 2.892,
+   "hi90": 3.298,
+   "season_rain_anomaly_pct": 19.8,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 288,
+     "max_wind_kt": 31,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 64,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 4.0,
+     "effect_t_ha": -0.076
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.803,
+     "effect_t_ha": -0.065
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.303,
+     "effect_t_ha": -0.041
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.198,
+     "effect_t_ha": 0.033
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 196.69,
+     "effect_t_ha": -0.021
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 18.0,
+     "effect_t_ha": -0.02
+    }
+   ]
+  },
+  {
+   "district_slug": "puri",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.168,
+   "trend_t_ha": 2.36,
+   "anomaly_pct": -8.1,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.323,
+   "lo90": 0.9,
+   "hi80": 3.013,
+   "hi90": 3.435,
+   "season_rain_anomaly_pct": 21.8,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-23",
+     "closest_km": 260,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.655,
+     "effect_t_ha": -0.183
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.218,
+     "effect_t_ha": 0.032
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.201,
+     "effect_t_ha": -0.026
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.025
+    },
+    {
+     "feature": "coastal",
+     "label": "Coastal district",
+     "unit": "flag",
+     "value": 1.0,
+     "effect_t_ha": 0.022
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 5.346,
+     "effect_t_ha": 0.021
+    }
+   ]
+  },
+  {
+   "district_slug": "rayagada",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.56,
+   "trend_t_ha": 3.084,
+   "anomaly_pct": -17.0,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.562,
+   "lo90": 1.063,
+   "hi80": 3.558,
+   "hi90": 4.057,
+   "season_rain_anomaly_pct": 6.3,
+   "cyclones": [
+    {
+     "name": "Unnamed depression",
+     "date": "2026-09-24",
+     "closest_km": 142,
+     "max_wind_kt": 40,
+     "sid": "2026266N18085"
+    },
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 169,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.702,
+     "effect_t_ha": -0.321
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": -0.087,
+     "effect_t_ha": -0.12
+    },
+    {
+     "feature": "prcp_3day_max",
+     "label": "Wettest 3-day spell",
+     "unit": "mm",
+     "value": 190.19,
+     "effect_t_ha": -0.034
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.031
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.063,
+     "effect_t_ha": 0.029
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 16.244,
+     "effect_t_ha": 0.026
+    }
+   ]
+  },
+  {
+   "district_slug": "sambalpur",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.417,
+   "trend_t_ha": 2.371,
+   "anomaly_pct": 2.0,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.475,
+   "lo90": 1.004,
+   "hi80": 3.359,
+   "hi90": 3.83,
+   "season_rain_anomaly_pct": 22.8,
+   "cyclones": [
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 272,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.228,
+     "effect_t_ha": 0.046
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 2.076,
+     "effect_t_ha": 0.029
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": -0.157,
+     "effect_t_ha": 0.029
+    },
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 2.0,
+     "effect_t_ha": -0.028
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.255,
+     "effect_t_ha": -0.016
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.019,
+     "effect_t_ha": 0.011
+    }
+   ]
+  },
+  {
+   "district_slug": "subarnapur",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 3.294,
+   "trend_t_ha": 3.436,
+   "anomaly_pct": -4.1,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 2.01,
+   "lo90": 1.368,
+   "hi80": 4.577,
+   "hi90": 5.22,
+   "season_rain_anomaly_pct": 16.3,
+   "cyclones": [
+    {
+     "name": "Arnab",
+     "date": "2026-10-29",
+     "closest_km": 202,
+     "max_wind_kt": 22,
+     "sid": "2026299N16089"
+    }
+   ],
+   "drivers": [
+    {
+     "feature": "heavy_days_season",
+     "label": "Heavy-rain days (>= 64.5 mm) this season",
+     "unit": "days",
+     "value": 4.0,
+     "effect_t_ha": -0.112
+    },
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.163,
+     "effect_t_ha": 0.061
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 7.179,
+     "effect_t_ha": 0.04
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.27,
+     "effect_t_ha": -0.035
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 18.0,
+     "effect_t_ha": -0.033
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": 0.045,
+     "effect_t_ha": -0.026
+    }
+   ]
+  },
+  {
+   "district_slug": "sundargarh",
+   "year": 2026,
+   "lead": "Oct",
+   "model": "ensemble|compact|w=all",
+   "issued_after": "2026-10-31",
+   "forecast_t_ha": 2.082,
+   "trend_t_ha": 1.986,
+   "anomaly_pct": 4.9,
+   "baseline_anomaly_pct": -0.7,
+   "lo80": 1.271,
+   "lo90": 0.865,
+   "hi80": 2.894,
+   "hi90": 3.3,
+   "season_rain_anomaly_pct": 21.6,
+   "cyclones": [],
+   "drivers": [
+    {
+     "feature": "prcp_anom_season",
+     "label": "Season rainfall so far vs normal",
+     "unit": "pct",
+     "value": 0.216,
+     "effect_t_ha": 0.048
+    },
+    {
+     "feature": "tmax_anom_mean",
+     "label": "Daytime temperature since August vs normal",
+     "unit": "degC",
+     "value": 0.113,
+     "effect_t_ha": 0.025
+    },
+    {
+     "feature": "prcp_anom_recent",
+     "label": "Rainfall in the last two months vs normal",
+     "unit": "pct",
+     "value": -0.144,
+     "effect_t_ha": 0.022
+    },
+    {
+     "feature": "cyclone_exposure",
+     "label": "Cyclone exposure (wind, distance-weighted)",
+     "unit": "kt",
+     "value": 0.0,
+     "effect_t_ha": 0.019
+    },
+    {
+     "feature": "dry_spell_days",
+     "label": "Longest dry spell since July",
+     "unit": "days",
+     "value": 12.0,
+     "effect_t_ha": -0.008
+    },
+    {
+     "feature": "gwet_anom_mean",
+     "label": "Soil moisture since July vs normal",
+     "unit": "frac",
+     "value": 0.018,
+     "effect_t_ha": 0.008
     }
    ]
   },
